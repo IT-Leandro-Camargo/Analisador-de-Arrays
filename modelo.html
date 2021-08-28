@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="icon" href="imagens/lupa.ico">
+
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <p>Analisador de Números</p>
+    </header>
+    <section> 
+        <div id='inserir'>
+            Número (entre 1 e 100):
+            <input type="number" name='txtnum' id='fnum'>
+            <input id="button" type="button" value="Adicionar" onclick="adicionar()">
+        </div>     
+                
+        <div>
+            <select name="quadro" id="quadro" size="10"> <!-- size="10" para manter o tamanho da tabuada -->
+                <option>Digite no campo acima</option>
+            </select>            
+        </div>  
+        <div>
+            <input id='buttonFinal' type='button' value='Gerar Relatório' onclick='gerarRelatorio()'>            
+        </div>    
+        <div id='res'>Relatório</div>  
+    </section>
+    <footer>
+        <p>&copy Leandro Camargo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
